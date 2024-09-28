@@ -3,8 +3,10 @@ import { View, Text, StyleSheet } from 'react-native';
 
 const HomeScreen = () => {
     return(
-        <View style={styles.container}>
-            <Text style={styles.container}>Bem vindo(a)</Text>
+        <View className="flex-1 justify-center items-center bg-white">
+            <Text className="text-2xl font-bold">Bem vindo(a) ao Apto48</Text>
         </View>
-    )
-}
+    );
+};
+
+export default HomeScreen;
