@@ -11,16 +11,8 @@ const Stack = createStackNavigator();
 
 export default function App(){
   return (
-    <AppProvider>
-      <PaperProvider> 
-      <NavigationContainer>
-        <Stack.Navigator initialRouteName="Home">
-          <Stack.Screen name="Home" component={HomeScreen}>
-        
-          </Stack.Screen>
-        </Stack.Navigator>
-      </NavigationContainer>
-      </PaperProvider>
-    </AppProvider>
+    <PaperProvider>
+      <HomeScreen />
+    </PaperProvider>
   );
 };
